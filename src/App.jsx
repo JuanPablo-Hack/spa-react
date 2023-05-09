@@ -1,5 +1,6 @@
 import './assets/css/base/base.css';
 import './assets/css/componentes/card.css';
+import Categoria from './components/Categorias';
 import NavBar from './components/NavBar';
 import Post from './components/Post';
 import Home from './pages/Home';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="*" element={<NotFound />} />
         <Route path="posts/:id" element={<Post />} />
+        <Route path="/categoria/:id/*" element={<Categoria />} />
       </Routes>
     </Router>
   );
